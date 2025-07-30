@@ -1,10 +1,116 @@
-  body {
-        background-color: #f0f7ed;
+/* Importa las fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=IBM+Plex+Mono:wght@400;700&family=Fira+Code:wght@400;700&display=swap');
+
+/* --- Estilos Generales y Fondo --- */
+body {
+    /* Color de fondo: Blanco roto para seriedad y legibilidad */
+    background-color: #F8F8F8; /* Un blanco roto suave, similar a 'whitesmoke' pero un poco más cálido */
+
+    /* Color de texto principal: Gris oscuro para buen contraste y profesionalismo */
+    color: #333333; /* Un gris muy oscuro, más suave que el negro puro */
+
+    /* Fuente principal para el cuerpo del texto: IBM Plex Sans */
+    /* Es legible, moderna y profesional, con un toque sutil que complementa las otras fuentes Plex. */
+    font-family: 'IBM Plex Sans', sans-serif;
+
+    /* Tamaño de fuente base y altura de línea para mejor legibilidad */
+    font-size: 1.1em; /* Un poco más grande para facilitar la lectura */
+    line-height: 1.6; /* Espaciado entre líneas para mejor flujo de lectura */
+
+    /* Márgenes y ancho máximo para centrar el contenido y mejorar la legibilidad */
+    max-width: 900px; /* Limita el ancho del contenido para evitar líneas demasiado largas */
+    margin: 40px auto; /* Centra el contenido en la página y da espacio alrededor */
+    padding: 0 20px; /* Añade un poco de padding en los lados para pantallas pequeñas */
+}
+
+/* --- Estilos para Títulos --- */
+h1, h2, h3, h4, h5, h6 {
+    /* Fuente para títulos: IBM Plex Mono */
+    /* Aquí es donde añadimos el toque "geek" y técnico. Es clara y con un aire de código. */
+    font-family: 'IBM Plex Mono', monospace;
+    color: #222222; /* Un gris aún más oscuro para destacar los títulos */
+    margin-top: 1.5em; /* Espacio superior para separar del párrafo anterior */
+    margin-bottom: 0.8em; /* Espacio inferior para separar del contenido siguiente */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño grande para el título principal */
+    border-bottom: 2px solid #DDDDDD; /* Línea sutil para darle más peso académico */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+/* --- Estilos para Bloques de Código y Elementos Monospaciados --- */
+pre, code {
+    /* Fuente para código: Fira Code */
+    /* Ideal para bloques de código por su legibilidad y ligaduras, da un aspecto muy de "programador". */
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95em; /* Ligeramente más pequeña para diferenciarla del texto normal */
+    background-color: #EEEEEE; /* Fondo gris claro para los bloques de código */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    padding: 5px 10px; /* Espaciado interno */
+}
+
+/* Estilo para bloques de código (pre) */
+pre {
+    display: block;
+    padding: 15px;
+    margin: 1.5em 0;
+    overflow-x: auto; /* Permite scroll horizontal si el código es muy largo */
+    border: 1px solid #CCCCCC; /* Un borde sutil para enmarcar el código */
+}
+
+/* Estilo para elementos de código en línea (code) */
+code {
+    white-space: nowrap; /* Evita que el código en línea se rompa */
+}
+
+/* --- Estilos para Enlaces --- */
+a {
+    color: #0077AA; /* Un azul académico tradicional para los enlaces */
+    text-decoration: none; /* Elimina el subrayado por defecto */
+}
+
+a:hover {
+    text-decoration: underline; /* Subraya al pasar el ratón para indicar interactividad */
+    color: #005588; /* Un azul más oscuro al pasar el ratón */
+}
+
+/* --- Otros elementos comunes --- */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 1em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+blockquote {
+    border-left: 4px solid #BBBBBB; /* Línea gris para las citas */
+    margin: 1.5em 0;
+    padding: 0.5em 20px;
+    font-style: italic;
+    color: #555555; /* Un gris medio para el texto de las citas */
+}
+
+/* Ajustes para dispositivos más pequeños */
+@media (max-width: 768px) {
+    body {
+        font-size: 1em;
+        margin: 20px auto;
+        padding: 0 15px;
     }
-    hr {
-       border-style: dotted none none none;
-       border-color: gray;
-       border-width:8px;
-       height: 2px;
-       width: 5%;
+
+    h1 {
+        font-size: 2em;
     }
+}
